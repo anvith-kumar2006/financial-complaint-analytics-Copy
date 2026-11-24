@@ -1,0 +1,80 @@
+[
+  {
+    "financial_product":"Credit card",
+    "total_complaints":1191,
+    "pct_of_total":23.94,
+    "open_count":73,
+    "closed_count":1118,
+    "timely_yes":1027,
+    "timely_no":91,
+    "timely_rate":91.86,
+    "avg_response_days":8.42,
+    "min_response_days":1.0,
+    "max_response_days":25.0
+  },
+  {
+    "financial_product":"Checking or savings account",
+    "total_complaints":1054,
+    "pct_of_total":21.19,
+    "open_count":63,
+    "closed_count":991,
+    "timely_yes":915,
+    "timely_no":76,
+    "timely_rate":92.33,
+    "avg_response_days":8.56,
+    "min_response_days":1.0,
+    "max_response_days":25.0
+  },
+  {
+    "financial_product":"Credit reporting",
+    "total_complaints":906,
+    "pct_of_total":18.21,
+    "open_count":54,
+    "closed_count":852,
+    "timely_yes":773,
+    "timely_no":79,
+    "timely_rate":90.73,
+    "avg_response_days":8.8,
+    "min_response_days":1.0,
+    "max_response_days":25.0
+  },
+  {
+    "financial_product":"Personal loan",
+    "total_complaints":826,
+    "pct_of_total":16.6,
+    "open_count":50,
+    "closed_count":776,
+    "timely_yes":709,
+    "timely_no":67,
+    "timely_rate":91.37,
+    "avg_response_days":8.59,
+    "min_response_days":1.0,
+    "max_response_days":25.0
+  },
+  {
+    "financial_product":"Mortgage",
+    "total_complaints":648,
+    "pct_of_total":13.03,
+    "open_count":37,
+    "closed_count":611,
+    "timely_yes":496,
+    "timely_no":115,
+    "timely_rate":81.18,
+    "avg_response_days":9.76,
+    "min_response_days":1.0,
+    "max_response_days":25.0
+  },
+  {
+    "financial_product":"Buy now, pay later",
+    "total_complaints":350,
+    "pct_of_total":7.04,
+    "open_count":33,
+    "closed_count":317,
+    "timely_yes":282,
+    "timely_no":35,
+    "timely_rate":88.96,
+    "avg_response_days":9.03,
+    "min_response_days":1.0,
+    "max_response_days":25.0
+  }
+]

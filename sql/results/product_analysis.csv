@@ -1,0 +1,7 @@
+financial_product,total_complaints,pct_of_total,open_count,closed_count,timely_yes,timely_no,timely_rate,avg_response_days,min_response_days,max_response_days
+Credit card,1191,23.94,73,1118,1027,91,91.86,8.42,1.0,25.0
+Checking or savings account,1054,21.19,63,991,915,76,92.33,8.56,1.0,25.0
+Credit reporting,906,18.21,54,852,773,79,90.73,8.8,1.0,25.0
+Personal loan,826,16.6,50,776,709,67,91.37,8.59,1.0,25.0
+Mortgage,648,13.03,37,611,496,115,81.18,9.76,1.0,25.0
+"Buy now, pay later",350,7.04,33,317,282,35,88.96,9.03,1.0,25.0

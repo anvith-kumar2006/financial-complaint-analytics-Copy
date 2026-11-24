@@ -1,0 +1,2 @@
+total_complaints,open_complaints,closed_complaints,open_rate,closed_rate,timely_yes,timely_no,timely_rate,avg_response_days,min_response_days,max_response_days
+4975,310,4665,6.23,93.77,4202,463,90.08,8.76,1.0,25.0

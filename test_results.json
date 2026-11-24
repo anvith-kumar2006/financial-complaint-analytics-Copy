@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-11-22T11:21:19.555692",
+  "summary": {
+    "total_tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "success_rate": 100.0
+  },
+  "tests": [
+    {
+      "test_name": "KPI Baseline Validation",
+      "passed": true,
+      "total_checks": 7,
+      "passed_checks": 7,
+      "failed_checks": 0,
+      "details": [
+        {
+          "metric": "total_complaints",
+          "expected": 4975,
+          "actual": 4975,
+          "status": "pass"
+        },
+        {
+          "metric": "open_complaints",
+          "expected": 310,
+          "actual": 310,
+          "status": "pass"
+        },
+        {
+          "metric": "closed_complaints",
+          "expected": 4665,
+          "actual": 4665,
+          "status": "pass"
+        },
+        {
+          "metric": "timely_yes",
+          "expected": 4202,
+          "actual": 4202,
+          "status": "pass"
+        },
+        {
+          "metric": "timely_no",
+          "expected": 463,
+          "actual": 463,
+          "status": "pass"
+        },
+        {
+          "metric": "timely_rate",
+          "expected": 90.08,
+          "actual": 90.08,
+          "status": "pass"
+        },
+        {
+          "metric": "avg_response_days",
+          "expected": 8.76,
+          "actual": 8.76,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "test_name": "SQL-Python Consistency",
+      "passed": true,
+      "total_checks": 5,
+      "passed_checks": 5,
+      "failed_checks": 0,
+      "details": [
+        {
+          "metric": "total_complaints",
+          "sql_value": 4975,
+          "python_value": 4975,
+          "status": "pass"
+        },
+        {
+          "metric": "open_complaints",
+          "sql_value": 310,
+          "python_value": 310,
+          "status": "pass"
+        },
+        {
+          "metric": "closed_complaints",
+          "sql_value": 4665,
+          "python_value": 4665,
+          "status": "pass"
+        },
+        {
+          "metric": "timely_rate",
+          "sql_value": 90.08,
+          "python_value": 90.08,
+          "status": "pass"
+        },
+        {
+          "metric": "avg_response_days",
+          "sql_value": 8.76,
+          "python_value": 8.76,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "test_name": "Data Quality Checks",
+      "passed": true,
+      "total_checks": 5,
+      "passed_checks": 5,
+      "failed_checks": 0,
+      "details": [
+        {
+          "check": "No duplicate complaint IDs",
+          "expected": 0,
+          "actual": "0",
+          "status": "pass"
+        },
+        {
+          "check": "Valid response_status values",
+          "expected": "Open or Closed",
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "check": "Open complaints without response dates",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "check": "Closed complaints with response dates",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "check": "Date range within expected bounds",
+          "expected": "2025-10-01 to 2026-10-15",
+          "actual": "2025-10-01 to 2026-10-15",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "test_name": "React Data Compatibility",
+      "passed": true,
+      "checks": {
+        "file_exists": true,
+        "row_count_match": true,
+        "columns_match": true
+      }
+    }
+  ]
+}

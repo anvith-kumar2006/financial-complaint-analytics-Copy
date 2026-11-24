@@ -1,0 +1,218 @@
+[
+  {
+    "financial_product":"Buy now, pay later",
+    "issue_category":"Refund delay",
+    "complaint_count":93,
+    "pct_of_product":26.57,
+    "closure_rate":88.17,
+    "timely_rate":85.37,
+    "avg_response_days":9.88
+  },
+  {
+    "financial_product":"Buy now, pay later",
+    "issue_category":"Payment issue",
+    "complaint_count":88,
+    "pct_of_product":25.14,
+    "closure_rate":93.18,
+    "timely_rate":95.12,
+    "avg_response_days":7.48
+  },
+  {
+    "financial_product":"Buy now, pay later",
+    "issue_category":"Incorrect billing",
+    "complaint_count":86,
+    "pct_of_product":24.57,
+    "closure_rate":88.37,
+    "timely_rate":88.16,
+    "avg_response_days":9.09
+  },
+  {
+    "financial_product":"Buy now, pay later",
+    "issue_category":"Account access",
+    "complaint_count":83,
+    "pct_of_product":23.71,
+    "closure_rate":92.77,
+    "timely_rate":87.01,
+    "avg_response_days":9.7
+  },
+  {
+    "financial_product":"Checking or savings account",
+    "issue_category":"Transaction dispute",
+    "complaint_count":285,
+    "pct_of_product":27.04,
+    "closure_rate":94.74,
+    "timely_rate":92.59,
+    "avg_response_days":8.6
+  },
+  {
+    "financial_product":"Checking or savings account",
+    "issue_category":"Account closure",
+    "complaint_count":259,
+    "pct_of_product":24.57,
+    "closure_rate":93.44,
+    "timely_rate":92.98,
+    "avg_response_days":8.29
+  },
+  {
+    "financial_product":"Checking or savings account",
+    "issue_category":"Unexpected fees",
+    "complaint_count":256,
+    "pct_of_product":24.29,
+    "closure_rate":94.53,
+    "timely_rate":92.15,
+    "avg_response_days":8.68
+  },
+  {
+    "financial_product":"Checking or savings account",
+    "issue_category":"Account access",
+    "complaint_count":254,
+    "pct_of_product":24.1,
+    "closure_rate":93.31,
+    "timely_rate":91.56,
+    "avg_response_days":8.65
+  },
+  {
+    "financial_product":"Credit card",
+    "issue_category":"Fraudulent charges",
+    "complaint_count":307,
+    "pct_of_product":25.78,
+    "closure_rate":95.77,
+    "timely_rate":91.84,
+    "avg_response_days":8.53
+  },
+  {
+    "financial_product":"Credit card",
+    "issue_category":"Card declined",
+    "complaint_count":299,
+    "pct_of_product":25.1,
+    "closure_rate":95.32,
+    "timely_rate":91.23,
+    "avg_response_days":8.36
+  },
+  {
+    "financial_product":"Credit card",
+    "issue_category":"Billing dispute",
+    "complaint_count":296,
+    "pct_of_product":24.85,
+    "closure_rate":91.55,
+    "timely_rate":91.88,
+    "avg_response_days":8.1
+  },
+  {
+    "financial_product":"Credit card",
+    "issue_category":"Unexpected fees",
+    "complaint_count":289,
+    "pct_of_product":24.27,
+    "closure_rate":92.73,
+    "timely_rate":92.54,
+    "avg_response_days":8.68
+  },
+  {
+    "financial_product":"Credit reporting",
+    "issue_category":"Report access",
+    "complaint_count":242,
+    "pct_of_product":26.71,
+    "closure_rate":92.98,
+    "timely_rate":96.89,
+    "avg_response_days":7.87
+  },
+  {
+    "financial_product":"Credit reporting",
+    "issue_category":"Incorrect information",
+    "complaint_count":228,
+    "pct_of_product":25.17,
+    "closure_rate":93.42,
+    "timely_rate":88.73,
+    "avg_response_days":9.22
+  },
+  {
+    "financial_product":"Credit reporting",
+    "issue_category":"Investigation delay",
+    "complaint_count":226,
+    "pct_of_product":24.94,
+    "closure_rate":95.13,
+    "timely_rate":89.3,
+    "avg_response_days":8.76
+  },
+  {
+    "financial_product":"Credit reporting",
+    "issue_category":"Identity-related dispute",
+    "complaint_count":210,
+    "pct_of_product":23.18,
+    "closure_rate":94.76,
+    "timely_rate":87.44,
+    "avg_response_days":9.45
+  },
+  {
+    "financial_product":"Mortgage",
+    "issue_category":"Payment application",
+    "complaint_count":177,
+    "pct_of_product":27.31,
+    "closure_rate":93.22,
+    "timely_rate":80.61,
+    "avg_response_days":9.73
+  },
+  {
+    "financial_product":"Mortgage",
+    "issue_category":"Loan modification",
+    "complaint_count":169,
+    "pct_of_product":26.08,
+    "closure_rate":93.49,
+    "timely_rate":77.22,
+    "avg_response_days":10.04
+  },
+  {
+    "financial_product":"Mortgage",
+    "issue_category":"Escrow problem",
+    "complaint_count":161,
+    "pct_of_product":24.85,
+    "closure_rate":93.17,
+    "timely_rate":83.33,
+    "avg_response_days":9.68
+  },
+  {
+    "financial_product":"Mortgage",
+    "issue_category":"Servicing delay",
+    "complaint_count":141,
+    "pct_of_product":21.76,
+    "closure_rate":97.87,
+    "timely_rate":84.06,
+    "avg_response_days":9.58
+  },
+  {
+    "financial_product":"Personal loan",
+    "issue_category":"Loan servicing",
+    "complaint_count":226,
+    "pct_of_product":27.36,
+    "closure_rate":93.36,
+    "timely_rate":89.57,
+    "avg_response_days":8.48
+  },
+  {
+    "financial_product":"Personal loan",
+    "issue_category":"Payment posting",
+    "complaint_count":215,
+    "pct_of_product":26.03,
+    "closure_rate":95.35,
+    "timely_rate":92.68,
+    "avg_response_days":8.32
+  },
+  {
+    "financial_product":"Personal loan",
+    "issue_category":"Interest charges",
+    "complaint_count":194,
+    "pct_of_product":23.49,
+    "closure_rate":90.72,
+    "timely_rate":93.75,
+    "avg_response_days":8.45
+  },
+  {
+    "financial_product":"Personal loan",
+    "issue_category":"Incorrect balance",
+    "complaint_count":191,
+    "pct_of_product":23.12,
+    "closure_rate":96.34,
+    "timely_rate":89.67,
+    "avg_response_days":9.16
+  }
+]

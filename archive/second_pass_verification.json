@@ -1,0 +1,109 @@
+{
+  "audit_date": "2026-11-22",
+  "audit_type": "Second-Pass Correction",
+  "authoritative_values": {
+    "total_complaints": 4975,
+    "open_complaints": 310,
+    "open_percentage": 6.23,
+    "closed_complaints": 4665,
+    "closed_percentage": 93.77,
+    "timely_yes": 4202,
+    "timely_no": 463,
+    "timely_rate": 90.08,
+    "avg_response_days": 8.76,
+    "median_response_days": 8
+  },
+  "corrections_applied": [
+    "Corrected display format examples to match actual baseline values",
+    "Corrected missing response dates count (310, not 311)",
+    "Corrected TRD timely response distribution",
+    "Corrected cleaning audit trail validation summary",
+    "Corrected TRD response status distribution",
+    "Corrected Null Count for date_company_responded",
+    "Removed misleading 'real-time' claims throughout PRD",
+    "Corrected Business Objectives baseline (90.08%)",
+    "Updated problem statement to reflect manual data reload architecture"
+  ],
+  "arithmetic_verification": {
+    "total_equals_open_plus_closed": true,
+    "closed_equals_timely_yes_plus_no": true,
+    "timely_rate_calculation_correct": true
+  },
+  "remaining_issues": {
+    "prd": [
+      {
+        "incorrect": "311",
+        "correct": "310",
+        "context": "open complaints",
+        "count": 2,
+        "lines": [
+          1362,
+          1378
+        ]
+      },
+      {
+        "incorrect": "6.22",
+        "correct": "6.23",
+        "context": "open percentage",
+        "count": 1,
+        "lines": [
+          1378
+        ]
+      },
+      {
+        "incorrect": "4,689",
+        "correct": "4,665",
+        "context": "closed complaints",
+        "count": 1,
+        "lines": [
+          1379
+        ]
+      },
+      {
+        "incorrect": "93.78",
+        "correct": "93.77",
+        "context": "closed percentage",
+        "count": 1,
+        "lines": [
+          1379
+        ]
+      },
+      {
+        "incorrect": "90.10",
+        "correct": "90.08",
+        "context": "timely response rate",
+        "count": 2,
+        "lines": [
+          1274,
+          1380
+        ]
+      }
+    ],
+    "trd": [
+      {
+        "incorrect": "311",
+        "correct": "310",
+        "context": "open complaints",
+        "count": 3,
+        "lines": [
+          413,
+          497,
+          578
+        ]
+      },
+      {
+        "incorrect": "6.22",
+        "correct": "6.23",
+        "context": "open percentage",
+        "count": 3,
+        "lines": [
+          413,
+          497,
+          578
+        ]
+      }
+    ],
+    "total_issues": 7
+  },
+  "status": "INCOMPLETE"
+}

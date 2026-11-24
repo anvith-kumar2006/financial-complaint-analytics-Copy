@@ -1,0 +1,71 @@
+{
+  "verification_date": "2026-11-22T10:40:33.997894",
+  "baseline_values": {
+    "total_complaints": 4975,
+    "open_complaints": 310,
+    "open_percentage": 6.23,
+    "closed_complaints": 4665,
+    "closed_percentage": 93.77,
+    "timely_yes": 4202,
+    "timely_no": 463,
+    "timely_rate": 90.08,
+    "avg_response_days": 8.76,
+    "median_response_days": 8
+  },
+  "arithmetic_consistency": {
+    "total_equals_open_plus_closed": true,
+    "closed_equals_timely_yes_plus_no": true,
+    "timely_rate_calculation_correct": true,
+    "all_passed": true
+  },
+  "outdated_values_scan": {
+    "prd_issues": [],
+    "trd_issues": [],
+    "all_corrected": true
+  },
+  "kpi_formulas": {
+    "checks": [
+      {
+        "name": "Total Complaints DAX",
+        "passed": true
+      },
+      {
+        "name": "Timely Response Rate DAX",
+        "passed": true
+      },
+      {
+        "name": "Average Response Time DAX",
+        "passed": true
+      }
+    ],
+    "all_present": true
+  },
+  "terminology": {
+    "realtime_occurrences_prd": 3,
+    "realtime_occurrences_trd": 0,
+    "manual_reload_mentioned": true
+  },
+  "document_agreement": {
+    "checks": [
+      {
+        "description": "Total Complaints",
+        "passed": true
+      },
+      {
+        "description": "Open Complaints",
+        "passed": true
+      },
+      {
+        "description": "Closed Complaints",
+        "passed": true
+      },
+      {
+        "description": "Timely Rate",
+        "passed": true
+      }
+    ],
+    "all_agree": true
+  },
+  "final_status": "PASS",
+  "ready_for_implementation": true
+}

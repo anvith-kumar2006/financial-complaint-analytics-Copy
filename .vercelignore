@@ -1,0 +1,32 @@
+# Python backend (preserved in repo, excluded from deployment)
+venv/
+__pycache__/
+*.py[cod]
+*.pyc
+clean_data.py
+execute_sql_queries.py
+test_integration.py
+archive/
+
+# Data and SQL (preserved in repo, excluded from deployment)
+data/
+sql/
+powerbi/*.pbix
+
+# Documentation (preserved in repo, excluded from deployment)
+*.md
+!react-dashboard/README.md
+
+# Test results
+test_results.json
+*.json
+!react-dashboard/package.json
+!react-dashboard/package-lock.json
+!react-dashboard/tsconfig*.json
+!react-dashboard/vite.config.ts
+!react-dashboard/tailwind.config.js
+!react-dashboard/postcss.config.js
+
+# Only deploy react-dashboard
+/*
+!/react-dashboard/

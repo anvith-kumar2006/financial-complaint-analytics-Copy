@@ -1,0 +1,46 @@
+[
+  {
+    "response_time_bucket":"0-3 days",
+    "complaint_count":887,
+    "pct_of_closed":19.01,
+    "timely_yes":887,
+    "timely_no":0,
+    "timely_rate_in_bucket":100.0,
+    "avg_days_in_bucket":2.01,
+    "min_days_in_bucket":1.0,
+    "max_days_in_bucket":3.0
+  },
+  {
+    "response_time_bucket":"4-7 days",
+    "complaint_count":1240,
+    "pct_of_closed":26.58,
+    "timely_yes":1240,
+    "timely_no":0,
+    "timely_rate_in_bucket":100.0,
+    "avg_days_in_bucket":5.5,
+    "min_days_in_bucket":4.0,
+    "max_days_in_bucket":7.0
+  },
+  {
+    "response_time_bucket":"8-15 days",
+    "complaint_count":2075,
+    "pct_of_closed":44.48,
+    "timely_yes":2075,
+    "timely_no":0,
+    "timely_rate_in_bucket":100.0,
+    "avg_days_in_bucket":11.01,
+    "min_days_in_bucket":8.0,
+    "max_days_in_bucket":14.0
+  },
+  {
+    "response_time_bucket":"16-30 days",
+    "complaint_count":463,
+    "pct_of_closed":9.92,
+    "timely_yes":0,
+    "timely_no":463,
+    "timely_rate_in_bucket":0.0,
+    "avg_days_in_bucket":20.4,
+    "min_days_in_bucket":16.0,
+    "max_days_in_bucket":25.0
+  }
+]

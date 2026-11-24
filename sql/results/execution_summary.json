@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-11-22T10:50:27.601273",
+  "total_queries": 9,
+  "successful": 9,
+  "failed": 0,
+  "queries": [
+    {
+      "query": "01_kpi_summary.sql",
+      "output_name": "kpi_summary",
+      "row_count": 1,
+      "csv_path": "sql\\results\\kpi_summary.csv",
+      "json_path": "sql\\results\\kpi_summary.json",
+      "status": "success"
+    },
+    {
+      "query": "02_product_analysis.sql",
+      "output_name": "product_analysis",
+      "row_count": 6,
+      "csv_path": "sql\\results\\product_analysis.csv",
+      "json_path": "sql\\results\\product_analysis.json",
+      "status": "success"
+    },
+    {
+      "query": "03_state_geographic.sql",
+      "output_name": "state_geographic",
+      "row_count": 18,
+      "csv_path": "sql\\results\\state_geographic.csv",
+      "json_path": "sql\\results\\state_geographic.json",
+      "status": "success"
+    },
+    {
+      "query": "04_channel_effectiveness.sql",
+      "output_name": "channel_effectiveness",
+      "row_count": 4,
+      "csv_path": "sql\\results\\channel_effectiveness.csv",
+      "json_path": "sql\\results\\channel_effectiveness.json",
+      "status": "success"
+    },
+    {
+      "query": "05_temporal_trends.sql",
+      "output_name": "temporal_trends",
+      "row_count": 13,
+      "csv_path": "sql\\results\\temporal_trends.csv",
+      "json_path": "sql\\results\\temporal_trends.json",
+      "status": "success"
+    },
+    {
+      "query": "06_issue_category.sql",
+      "output_name": "issue_category",
+      "row_count": 20,
+      "csv_path": "sql\\results\\issue_category.csv",
+      "json_path": "sql\\results\\issue_category.json",
+      "status": "success"
+    },
+    {
+      "query": "07_company_performance.sql",
+      "output_name": "company_performance",
+      "row_count": 8,
+      "csv_path": "sql\\results\\company_performance.csv",
+      "json_path": "sql\\results\\company_performance.json",
+      "status": "success"
+    },
+    {
+      "query": "08_response_time_distribution.sql",
+      "output_name": "response_time_distribution",
+      "row_count": 4,
+      "csv_path": "sql\\results\\response_time_distribution.csv",
+      "json_path": "sql\\results\\response_time_distribution.json",
+      "status": "success"
+    },
+    {
+      "query": "09_product_issue_matrix.sql",
+      "output_name": "product_issue_matrix",
+      "row_count": 24,
+      "csv_path": "sql\\results\\product_issue_matrix.csv",
+      "json_path": "sql\\results\\product_issue_matrix.json",
+      "status": "success"
+    }
+  ]
+}

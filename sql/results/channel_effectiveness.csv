@@ -1,0 +1,5 @@
+submission_channel,total_complaints,pct_of_total,open_count,closed_count,closure_rate,timely_yes,timely_no,timely_rate,avg_response_days,min_response_days,max_response_days
+Referral,1258,25.29,86,1172,93.16,1067,105,91.04,8.67,1.0,25.0
+Web,1250,25.13,63,1187,94.96,1072,115,90.31,8.76,1.0,25.0
+Phone,1249,25.11,81,1168,93.51,1038,130,88.87,8.8,1.0,25.0
+Mail,1218,24.48,80,1138,93.43,1025,113,90.07,8.83,1.0,25.0

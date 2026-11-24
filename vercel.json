@@ -1,0 +1,40 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd react-dashboard && npm install && npm run build",
+  "outputDirectory": "react-dashboard/dist",
+  "framework": null,
+  "installCommand": "cd react-dashboard && npm install",
+  "devCommand": "cd react-dashboard && npm run dev",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/Financial_Complaint_Analytics.pbix",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=Financial_Complaint_Analytics.pbix"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).csv",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

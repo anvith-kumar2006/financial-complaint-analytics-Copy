@@ -1,0 +1,202 @@
+[
+  {
+    "issue_category":"Unexpected fees",
+    "total_complaints":545,
+    "pct_of_total":10.95,
+    "open_count":35,
+    "closed_count":510,
+    "closure_rate":93.58,
+    "timely_rate":92.35,
+    "avg_response_days":8.68
+  },
+  {
+    "issue_category":"Account access",
+    "total_complaints":337,
+    "pct_of_total":6.77,
+    "open_count":23,
+    "closed_count":314,
+    "closure_rate":93.18,
+    "timely_rate":90.45,
+    "avg_response_days":8.91
+  },
+  {
+    "issue_category":"Fraudulent charges",
+    "total_complaints":307,
+    "pct_of_total":6.17,
+    "open_count":13,
+    "closed_count":294,
+    "closure_rate":95.77,
+    "timely_rate":91.84,
+    "avg_response_days":8.53
+  },
+  {
+    "issue_category":"Card declined",
+    "total_complaints":299,
+    "pct_of_total":6.01,
+    "open_count":14,
+    "closed_count":285,
+    "closure_rate":95.32,
+    "timely_rate":91.23,
+    "avg_response_days":8.36
+  },
+  {
+    "issue_category":"Billing dispute",
+    "total_complaints":296,
+    "pct_of_total":5.95,
+    "open_count":25,
+    "closed_count":271,
+    "closure_rate":91.55,
+    "timely_rate":91.88,
+    "avg_response_days":8.1
+  },
+  {
+    "issue_category":"Transaction dispute",
+    "total_complaints":285,
+    "pct_of_total":5.73,
+    "open_count":15,
+    "closed_count":270,
+    "closure_rate":94.74,
+    "timely_rate":92.59,
+    "avg_response_days":8.6
+  },
+  {
+    "issue_category":"Account closure",
+    "total_complaints":259,
+    "pct_of_total":5.21,
+    "open_count":17,
+    "closed_count":242,
+    "closure_rate":93.44,
+    "timely_rate":92.98,
+    "avg_response_days":8.29
+  },
+  {
+    "issue_category":"Report access",
+    "total_complaints":242,
+    "pct_of_total":4.86,
+    "open_count":17,
+    "closed_count":225,
+    "closure_rate":92.98,
+    "timely_rate":96.89,
+    "avg_response_days":7.87
+  },
+  {
+    "issue_category":"Incorrect information",
+    "total_complaints":228,
+    "pct_of_total":4.58,
+    "open_count":15,
+    "closed_count":213,
+    "closure_rate":93.42,
+    "timely_rate":88.73,
+    "avg_response_days":9.22
+  },
+  {
+    "issue_category":"Investigation delay",
+    "total_complaints":226,
+    "pct_of_total":4.54,
+    "open_count":11,
+    "closed_count":215,
+    "closure_rate":95.13,
+    "timely_rate":89.3,
+    "avg_response_days":8.76
+  },
+  {
+    "issue_category":"Loan servicing",
+    "total_complaints":226,
+    "pct_of_total":4.54,
+    "open_count":15,
+    "closed_count":211,
+    "closure_rate":93.36,
+    "timely_rate":89.57,
+    "avg_response_days":8.48
+  },
+  {
+    "issue_category":"Payment posting",
+    "total_complaints":215,
+    "pct_of_total":4.32,
+    "open_count":10,
+    "closed_count":205,
+    "closure_rate":95.35,
+    "timely_rate":92.68,
+    "avg_response_days":8.32
+  },
+  {
+    "issue_category":"Identity-related dispute",
+    "total_complaints":210,
+    "pct_of_total":4.22,
+    "open_count":11,
+    "closed_count":199,
+    "closure_rate":94.76,
+    "timely_rate":87.44,
+    "avg_response_days":9.45
+  },
+  {
+    "issue_category":"Interest charges",
+    "total_complaints":194,
+    "pct_of_total":3.9,
+    "open_count":18,
+    "closed_count":176,
+    "closure_rate":90.72,
+    "timely_rate":93.75,
+    "avg_response_days":8.45
+  },
+  {
+    "issue_category":"Incorrect balance",
+    "total_complaints":191,
+    "pct_of_total":3.84,
+    "open_count":7,
+    "closed_count":184,
+    "closure_rate":96.34,
+    "timely_rate":89.67,
+    "avg_response_days":9.16
+  },
+  {
+    "issue_category":"Payment application",
+    "total_complaints":177,
+    "pct_of_total":3.56,
+    "open_count":12,
+    "closed_count":165,
+    "closure_rate":93.22,
+    "timely_rate":80.61,
+    "avg_response_days":9.73
+  },
+  {
+    "issue_category":"Loan modification",
+    "total_complaints":169,
+    "pct_of_total":3.4,
+    "open_count":11,
+    "closed_count":158,
+    "closure_rate":93.49,
+    "timely_rate":77.22,
+    "avg_response_days":10.04
+  },
+  {
+    "issue_category":"Escrow problem",
+    "total_complaints":161,
+    "pct_of_total":3.24,
+    "open_count":11,
+    "closed_count":150,
+    "closure_rate":93.17,
+    "timely_rate":83.33,
+    "avg_response_days":9.68
+  },
+  {
+    "issue_category":"Servicing delay",
+    "total_complaints":141,
+    "pct_of_total":2.83,
+    "open_count":3,
+    "closed_count":138,
+    "closure_rate":97.87,
+    "timely_rate":84.06,
+    "avg_response_days":9.58
+  },
+  {
+    "issue_category":"Refund delay",
+    "total_complaints":93,
+    "pct_of_total":1.87,
+    "open_count":11,
+    "closed_count":82,
+    "closure_rate":88.17,
+    "timely_rate":85.37,
+    "avg_response_days":9.88
+  }
+]

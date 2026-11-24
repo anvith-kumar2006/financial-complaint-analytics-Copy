@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-11-22T10:45:54.304460",
+  "source_file": "data/original/lecture-file.csv",
+  "output_file": "data/processed/complaints_cleaned.csv",
+  "original_record_count": 5000,
+  "operations": [
+    {
+      "step": "duplicate_removal",
+      "records_affected": 25,
+      "strategy": "keep=first by row order",
+      "description": "Removed 25 duplicate complaint IDs"
+    },
+    {
+      "step": "financial_product_standardization",
+      "records_affected": 26,
+      "description": "Removed whitespace and standardized to title case"
+    },
+    {
+      "step": "submission_channel_standardization",
+      "records_affected": 17,
+      "description": "Removed whitespace and standardized to title case"
+    },
+    {
+      "step": "date_validation",
+      "records_affected": 0,
+      "description": "All dates valid, no corrections needed"
+    },
+    {
+      "step": "status_consistency_validation",
+      "records_affected": 0,
+      "description": "All status fields consistent, no violations found"
+    },
+    {
+      "step": "calculate_response_time",
+      "records_affected": 4665,
+      "description": "Calculated response time in days for 4665 closed complaints"
+    }
+  ],
+  "final_record_count": 4975,
+  "records_removed": 25
+}

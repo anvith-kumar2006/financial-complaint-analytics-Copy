@@ -1,0 +1,9 @@
+company_name,total_complaints,pct_of_total,open_count,closed_count,closure_rate,timely_yes,timely_no,timely_rate,avg_response_days,min_response_days,max_response_days
+Harbor Credit,669,13.45,42,627,93.72,576,51,91.87,8.52,1.0,25.0
+Silverline Lending,637,12.8,42,595,93.41,557,38,93.61,8.19,1.0,25.0
+Atlas Consumer Finance,630,12.66,42,588,93.33,481,107,81.8,10.05,1.0,25.0
+OakBridge Services,629,12.64,32,597,94.91,562,35,94.14,8.28,1.0,25.0
+Northstar Financial,628,12.62,38,590,93.95,555,35,94.07,8.4,1.0,25.0
+BluePeak Bank,618,12.42,42,576,93.2,524,52,90.97,8.65,1.0,25.0
+Cedar Finance,602,12.1,38,564,93.69,462,102,81.91,9.68,1.0,25.0
+Summit Payments,562,11.3,34,528,93.95,485,43,91.86,8.38,1.0,25.0

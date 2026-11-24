@@ -1,0 +1,5 @@
+response_time_bucket,complaint_count,pct_of_closed,timely_yes,timely_no,timely_rate_in_bucket,avg_days_in_bucket,min_days_in_bucket,max_days_in_bucket
+0-3 days,887,19.01,887,0,100.0,2.01,1.0,3.0
+4-7 days,1240,26.58,1240,0,100.0,5.5,4.0,7.0
+8-15 days,2075,44.48,2075,0,100.0,11.01,8.0,14.0
+16-30 days,463,9.92,0,463,0.0,20.4,16.0,25.0

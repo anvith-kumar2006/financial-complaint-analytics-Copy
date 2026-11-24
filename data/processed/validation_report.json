@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-11-22T10:45:54.795383",
+  "source_file": "data/original/lecture-file.csv",
+  "cleaned_file": "data/processed/complaints_cleaned.csv",
+  "original_records": 5000,
+  "cleaned_records": 4975,
+  "duplicates_removed": 25,
+  "kpi_validation": {
+    "total_complaints": {
+      "actual": 4975,
+      "expected": 4975
+    },
+    "open_complaints": {
+      "actual": 310,
+      "expected": 310
+    },
+    "closed_complaints": {
+      "actual": 4665,
+      "expected": 4665
+    },
+    "timely_yes": {
+      "actual": 4202,
+      "expected": 4202
+    },
+    "timely_no": {
+      "actual": 463,
+      "expected": 463
+    },
+    "timely_rate": {
+      "actual": 90.08,
+      "expected": 90.08
+    },
+    "avg_response_days": {
+      "actual": 8.76,
+      "expected": 8.76
+    }
+  },
+  "all_kpis_valid": true,
+  "data_quality_summary": {
+    "total_complaints": 4975,
+    "open_complaints": 310,
+    "closed_complaints": 4665,
+    "missing_states": 49,
+    "date_range": {
+      "start": "2025-10-01",
+      "end": "2026-10-15"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "total_complaints":4975,
+    "open_complaints":310,
+    "closed_complaints":4665,
+    "open_rate":6.23,
+    "closed_rate":93.77,
+    "timely_yes":4202,
+    "timely_no":463,
+    "timely_rate":90.08,
+    "avg_response_days":8.76,
+    "min_response_days":1.0,
+    "max_response_days":25.0
+  }
+]
