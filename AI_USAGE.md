@@ -1,338 +1,430 @@
-# AI Usage Documentation
-
+# Data Analytics Project Documentation
 ## Financial Customer Complaint Analytics Platform
 
-## 1. Overview
+**Project Domain:** Financial Services Analytics  
+**Role Demonstrated:** Data Analyst  
+**Project Period:** November 2026  
+**Primary Tools:** Python, SQL, Microsoft Power BI, React, TypeScript  
+**Development Approach:** Independent analytical decisions with AI-assisted technical guidance
 
-This document describes how artificial intelligence (AI) tools supported the planning, development, implementation, testing, documentation, and deployment preparation of the **Financial Customer Complaint Analytics Platform**.
+---
 
-The project uses Python, SQL, React, TypeScript, and Microsoft Power BI. AI tools assisted with development; human decisions, review, validation, and the documented manual Power BI Desktop work remained part of the process.
+# 1. Project Overview
 
-### AI tools used
+The Financial Customer Complaint Analytics Platform is an end-to-end data analytics project designed to transform raw financial customer complaint records into meaningful business insights.
 
-| Tool | Purpose |
+The project focuses on analysing customer complaints, identifying recurring issues, evaluating company performance, monitoring response times and measuring the effectiveness of complaint resolution.
+
+The objective is to demonstrate how data analytics can support business decision-making in the financial services sector.
+
+The project follows an analytical workflow:
+
+**Raw Data → Data Cleaning → Data Validation → SQL Analysis → KPI Development → Dashboarding → Business Insights**
+
+The solution combines Python-based data processing, SQL-based analytical queries, an interactive React dashboard and a Microsoft Power BI report.
+
+# 2. Business Problem
+
+Financial institutions receive customer complaints across different products, companies, channels and geographical locations.
+
+Without structured analysis, it can be difficult to identify:
+
+- Which financial products generate the most complaints.
+- Which complaint categories occur most frequently.
+- How effectively companies resolve customer complaints.
+- Whether companies respond within the required timeframe.
+- How complaint volumes change over time.
+- Which areas require operational improvement.
+
+This project addresses these questions by developing a structured analytical solution that converts complaint records into measurable performance indicators.
+
+# 3. Dataset and Data Understanding
+
+The project began with a dataset containing 5,000 complaint records.
+
+Initial data inspection identified 25 duplicate records. After removing duplicates, the final analytical dataset contained 4,975 unique complaint records.
+
+### Data preparation summary
+
+| Data quality activity | Result |
 |---|---|
-| Kiro AI (Claude Sonnet 4.5) | Project planning, code-generation assistance, debugging, and documentation |
-| ChatGPT | Technical guidance, implementation assistance, and Power BI troubleshooting |
+| Original records | 5,000 |
+| Duplicate records identified | 25 |
+| Records removed | 25 |
+| Final cleaned records | 4,975 |
+| Final unique records | 4,975 |
 
-**Project development period:** November 2026
+### Analytical dimensions
 
-**Development approach:** AI-assisted development with human supervision and validation.
+The dataset was used to analyse complaint information across dimensions such as:
 
-## 2. Executive summary
+- Financial products.
+- Complaint issue categories.
+- Financial companies.
+- Geographic locations.
+- Submission channels.
+- Complaint submission dates.
+- Response status.
+- Timely response indicators.
+- Response time in days.
 
-AI tools assisted at multiple points in the project lifecycle, including requirements analysis, data processing, SQL analytics, React and TypeScript development, testing, documentation, and deployment preparation.
+The objective of data understanding was to identify the available analytical dimensions, assess data quality and establish a reliable foundation for further analysis.
 
-Human contributions included defining project requirements, providing the dataset, reviewing outputs, validating results, making development decisions, and manually creating the Power BI report in Power BI Desktop. The work followed an iterative human-AI collaboration process and was not fully autonomous.
+# 4. Data Cleaning and Preparation
 
-## 3. Development phases
+**Primary tools:** Python, Pandas
 
-### Phase 0: Requirements analysis and planning
+Data cleaning was an important part of the analytical workflow because inaccurate or duplicated records could affect the reliability of business KPIs.
 
-**AI contributions**
+### Data preparation activities
 
-- Analyzed the original complaint dataset, which contained 5,000 records.
-- Identified 25 duplicate records.
-- Assisted with establishing the cleaned dataset baseline.
-- Prepared the Product Requirements Document (PRD) and Technical Requirements Document (TRD).
-- Assisted with defining the project architecture and implementation workflow.
+1. Inspected the original dataset structure.
+2. Identified duplicate complaint IDs.
+3. Removed duplicate records.
+4. Standardised text fields and categories.
+5. Validated and converted date fields.
+6. Checked response-status consistency.
+7. Calculated response time.
+8. Generated cleaned analytical data.
+9. Validated the final record count and KPI values.
 
-**Deliverables**
-
-- PRD v1.0
-- TRD v1.0
-- Initial data analysis script
-
-**Human contributions**
-
-- Defined the project objective.
-- Provided the original dataset.
-- Reviewed the requirements and architecture.
-
-### Phase 0.5: Documentation audit and correction
-
-Document validation identified inconsistencies between the PRD and TRD.
-
-**AI contributions**
-
-- Assisted with data reconciliation scripts and cross-checks of complaint counts and KPI calculations.
-- Helped correct outdated baseline references and update the PRD and TRD to version 1.1.
-- Prepared a final verification report.
-
-**Validated baselines**
-
-| Metric | Value |
-|---|---:|
-| Total complaints | 4,975 |
-| Open complaints | 310 |
-| Closed complaints | 4,665 |
-| Timely responses | 4,202 |
-| Untimely responses | 463 |
-| Timely response rate | 90.08% |
-| Average response time | 8.76 days |
-
-These are the documented Python/SQL validation values in `data/processed/validation_report.json` and `test_results.json`.
-
-**Human contributions**
-
-- Identified inconsistencies in the initial documents and requested further validation.
-- Reviewed the corrected documentation and approved proceeding to implementation.
-
-### Phase 1: Data processing pipeline
-
-**AI contributions**
-
-AI assistance supported development of the Python data-cleaning pipeline, including:
-
-- Duplicate complaint ID removal.
-- Whitespace and category standardization.
-- Date validation and conversion.
-- Response-status consistency checks.
-- Response-time calculation.
-- KPI validation, cleaning logs, and validation reports.
-
-**Key deliverables**
+### Key deliverables
 
 - `clean_data.py`
 - `data/processed/complaints_cleaned.csv`
 - `data/processed/cleaning_log.json`
 - `data/processed/validation_report.json`
 
-The cleaned dataset contains 4,975 unique complaint records. The pipeline reads `data/original/lecture-file.csv`; the raw source dataset is not included in the public Git repository.
+The final processed dataset contains 4,975 unique complaint records.
 
-**Human contributions**
+**Analytical responsibility:** Data quality and consistency were treated as prerequisites for KPI calculation and reporting.
 
-- Reviewed the data-cleaning strategy and generated outputs.
-- Confirmed the validated KPI baselines.
+# 5. SQL-Based Data Analysis
 
-### Phase 2: SQL analytics
+**Primary tool:** SQL  
+**Execution environment:** SQLite with Python
 
-**AI contributions**
+SQL was used to perform structured analytical queries on the cleaned complaint dataset.
 
-AI assistance supported development of nine analytical SQL queries:
+Nine analytical query areas were developed.
 
-| Query | Analysis |
-|---|---|
-| 01 | KPI summary |
-| 02 | Product analysis |
-| 03 | Geographic analysis |
-| 04 | Channel effectiveness |
-| 05 | Temporal trends |
-| 06 | Issue categories |
-| 07 | Company performance |
-| 08 | Response-time distribution |
-| 09 | Product-issue matrix |
+| No. | Analysis | Business purpose |
+|---:|---|---|
+| 1 | KPI Summary | Understand overall complaint performance |
+| 2 | Product Analysis | Identify products generating complaints |
+| 3 | Geographic Analysis | Examine complaint distribution by location |
+| 4 | Channel Effectiveness | Analyse complaint submission channels |
+| 5 | Temporal Trends | Understand changes in complaint volumes |
+| 6 | Issue Categories | Identify recurring customer problems |
+| 7 | Company Performance | Compare complaint resolution performance |
+| 8 | Response-Time Distribution | Examine response-time patterns |
+| 9 | Product-Issue Matrix | Identify relationships between products and issues |
 
-A Python SQL execution script loads the cleaned CSV into an in-memory SQLite database and exports query results.
+### SQL analytical techniques
 
-**Deliverables**
+The project used SQL operations and analytical logic involving:
 
-- Nine SQL query files.
+- `SELECT`
+- `WHERE`
+- `GROUP BY`
+- `ORDER BY`
+- Aggregate functions.
+- Conditional aggregation.
+- Date-based grouping.
+- Distinct record counting.
+- Performance comparisons.
+
+A Python execution script was used to load the cleaned dataset into an in-memory SQLite database and export analytical query results.
+
+### Validation
+
+The recorded SQL execution report shows that all nine queries completed successfully in that execution.
+
+Selected SQL results were compared with Python calculations to check consistency.
+
+**Deliverables:**
+
+- Nine analytical SQL query files.
 - SQL execution script.
-- CSV and JSON query results.
+- CSV and JSON result files.
 - KPI validation outputs.
 
-**Recorded validation**
+# 6. KPI Development and Business Metrics
 
-- `sql/results/execution_summary.json` records that all nine queries completed successfully in that run.
-- Recorded SQL results were compared with Python calculations for selected KPIs.
-- Query column-name mismatches identified during development were corrected.
+A major part of the project involved defining measurable indicators to evaluate complaint performance.
 
-These are results from the recorded run, not a guarantee that every future execution will succeed.
+The following KPI values were validated against the cleaned dataset.
 
-**Human contributions**
+### Overall performance indicators
 
-- Reviewed analytical requirements and query outputs.
-- Approved using the generated results in dashboard development.
+| KPI | Value |
+|---|---:|
+| Total Complaints | 4,975 |
+| Open Complaints | 310 |
+| Closed Complaints | 4,665 |
+| Timely Responses | 4,202 |
+| Untimely Responses | 463 |
+| Timely Response Rate | 90.08% |
+| Average Response Time | 8.76 days |
 
-### Phase 3: React web dashboard
+### KPI interpretation
 
-**AI contributions**
+**Total Complaints**
 
-AI assistance supported implementation of the React analytics dashboard.
+Measures the total number of unique customer complaint records.
 
-**Technology stack**
+**Open Complaints**
 
-- React 18
+Measures complaints that have not reached a closed response status.
+
+**Closed Complaints**
+
+Measures complaints recorded as closed.
+
+**Timely Response Rate**
+
+Measures the percentage of responses recorded as timely among records with a Yes or No timely-response indicator.
+
+\[
+\text{Timely Response Rate} =
+\frac{\text{Timely Responses}}
+{\text{Timely Responses}+\text{Untimely Responses}}
+\times 100
+\]
+
+\[
+= \frac{4202}{4202+463}\times100
+=90.08\%
+\]
+
+**Average Response Time**
+
+Measures the average number of days taken to respond to complaints, based on the available response-time data.
+
+\[
+\text{Average Response Time} = 8.76 \text{ days}
+\]
+
+These KPIs provide a quantitative foundation for evaluating complaint volumes, operational status and response performance.
+
+# 7. Microsoft Power BI Dashboard
+
+**Tool:** Microsoft Power BI Desktop
+
+The Power BI dashboard was personally developed by me using Microsoft Power BI Desktop.
+
+This was a hands-on business intelligence implementation, not an autonomously generated dashboard.
+
+### My implementation responsibilities
+
+- Imported the cleaned CSV dataset into Power BI.
+- Checked the imported columns and data types.
+- Configured the data model.
+- Created DAX measures for the required KPIs.
+- Personally implemented the Total Complaints measure.
+- Personally implemented Open Complaints and Closed Complaints measures.
+- Created the Timely Response Rate measure.
+- Created the Average Response Time measure.
+- Designed and formatted KPI cards.
+- Created monthly complaint trend visualisations.
+- Built financial product distribution charts.
+- Developed Top 10 issue-category analysis.
+- Created company performance visualisations.
+- Configured Date, Company and Financial Product slicers.
+- Tested interactive filtering and KPI changes.
+- Saved the completed report as `Financial_Complaint_Analytics.pbix`.
+- Published the report to Power BI Service.
+
+### Dashboard capabilities
+
+| Visualisation | Analytical purpose |
+|---|---|
+| KPI Cards | Display overall performance |
+| Monthly Trend | Track complaint volume over time |
+| Product Distribution | Compare complaint volumes by product |
+| Top Issue Categories | Identify frequent complaint issues |
+| Company Performance | Compare company-level indicators |
+| Interactive Slicers | Filter data by date, company and product |
+
+### DAX and KPI implementation
+
+The dashboard uses DAX measures to calculate and display key performance indicators.
+
+Example of the Total Complaints measure:
+
+```dax
+Total Complaints =
+DISTINCTCOUNT('complaints_cleaned'[complaint_id])
+```
+
+Example of the Average Response Time measure:
+
+```dax
+Average Response Time =
+AVERAGE('complaints_cleaned'[response_time_days])
+```
+
+The Power BI dashboard was manually configured and tested by me. AI assistance was limited to technical explanations, DAX guidance and troubleshooting during implementation.
+
+# 8. React Analytics Dashboard
+
+**Technology stack:**
+
+- React
 - TypeScript
 - Vite
 - Tailwind CSS
 - Recharts
 - Lucide React
 
-**Major components**
+The React dashboard provides an additional interface for exploring complaint analytics.
 
-| Component | Functionality |
-|---|---|
-| KPI Cards | Complaint performance indicators |
-| Product Chart | Product-wise complaint analysis |
-| State Chart | Geographic complaint distribution |
-| Channel Chart | Submission-channel analysis |
-| Trends Chart | Monthly complaint trends |
-| Response Time Chart | Response-time distribution |
-| Issue Table | Issue-category analysis |
+### Main analytical features
 
-Other implementation work included CSV loading, client-side calculations, responsive layout, component organization, and loading/error handling.
+- KPI summary cards.
+- Product-wise complaint analysis.
+- Geographic complaint distribution.
+- Submission-channel analysis.
+- Monthly complaint trends.
+- Response-time analysis.
+- Issue-category table.
+- Interactive data presentation.
 
-**Human contributions**
+The application uses the cleaned complaint data to display analytical summaries and visualisations.
 
-- Reviewed and tested the interface.
-- Identified visualization and presentation issues.
-- Requested corrections and improvements.
+The Power BI Dashboard tab provides a downloadable `.pbix` report for users who want to explore the report in Microsoft Power BI Desktop.
 
-### Phase 4: Power BI dashboard
+# 9. Data Validation and Testing
 
-The project documentation distinguishes the manually authored Power BI Desktop report from the React implementation. The report was created in Microsoft Power BI Desktop with AI guidance; it was not generated autonomously.
+Data validation was performed to improve the reliability of the analytical results.
 
-**AI contributions**
+### Validation activities
 
-- Prepared Power BI setup instructions and DAX measure guidance.
-- Guided data import and data-type validation.
-- Assisted with KPI cards, trend and product visuals, issue analysis, and slicer configuration.
-- Helped check KPI values and slicer interactions.
+1. Checked the cleaned dataset record count.
+2. Verified duplicate removal.
+3. Compared KPI calculations.
+4. Checked selected SQL results against Python calculations.
+5. Reviewed dashboard KPI values.
+6. Tested interactive slicer behaviour.
+7. Reviewed data compatibility with the React dashboard.
 
-**Human contributions**
+### Recorded test results
 
-- Imported the cleaned CSV into Power BI Desktop.
-- Configured the data model and measures.
-- Created, arranged, and formatted report visuals.
-- Tested interactive slicers.
-- Saved the report as `Financial_Complaint_Analytics.pbix`.
-- Project documentation records publishing the report to Power BI Service.
+The project test report records the following results:
 
-**Final KPI baselines**
-
-- Total complaints: 4,975
-- Open complaints: 310
-- Closed complaints: 4,665
-- Timely response rate: 90.08%
-- Average response time: 8.76 days
-
-The React application's Power BI Dashboard tab offers the `.pbix` file as a download. It does not embed or render the report. Opening the downloaded report requires Power BI Desktop; access to Power BI Service depends on the user's account and permissions.
-
-### Phase 5: Testing and validation
-
-**AI contributions**
-
-AI assistance supported validation work in four areas:
-
-1. KPI baseline validation.
-2. SQL-Python consistency.
-3. Data quality.
-4. React data compatibility.
-
-At the time of the recorded `test_results.json`, the report showed:
-
-| Test category | Recorded checks passed |
+| Test category | Passed checks |
 |---|---:|
-| KPI validation | 7/7 |
-| SQL-Python consistency | 5/5 |
-| Data quality | 5/5 |
-| React data compatibility | 3/3 |
-| Total | 20/20 |
+| KPI Validation | 7/7 |
+| SQL-Python Consistency | 5/5 |
+| Data Quality | 5/5 |
+| React Data Compatibility | 3/3 |
+| **Total** | **20/20** |
 
-These results describe the recorded checks only. They are not a claim of 100% test coverage or a guarantee of error-free operation in every environment.
+These figures represent the checks recorded in the project test report, not a claim of complete test coverage.
 
-**Human contributions**
+# 10. Business Analysis and Insights
 
-- Reviewed test outputs and dashboard calculations.
-- Tested interactive filters.
-- Identified interface issues during implementation.
+The analytical structure enables several important business questions to be investigated.
 
-### Phase 6: Documentation and deployment preparation
+### Complaint volume analysis
 
-**AI contributions**
+Identify which financial products and issue categories contribute the highest complaint volumes.
 
-- Assisted with the main README and project setup instructions.
-- Documented analytical methods and integration details.
-- Assisted with GitHub configuration and Vercel deployment preparation.
+### Company performance analysis
 
-**Human contributions**
+Compare complaint volumes, closure rates and timely response performance across financial companies.
 
-- Reviewed project documentation.
-- Managed the documented Power BI publishing process.
-- Made deployment decisions and reviewed the application experience.
+### Operational efficiency
 
-The React dashboard is a static Vite application configured for Vercel. Deployment outcome depends on the hosting account and deployment configuration; no guarantee of production readiness is implied.
+Use response-time metrics to understand how quickly complaints are being addressed.
 
-## 4. AI capabilities demonstrated
+### Temporal analysis
 
-### 4.1 Data analysis and processing
+Examine complaint trends across months to identify changes in complaint activity.
 
-AI assistance included dataset inspection, duplicate identification, data-cleaning logic, KPI calculations, and validation-script development.
+### Product and issue relationship
 
-### 4.2 Full-stack development
+Use the product-issue matrix to identify recurring problems associated with particular financial products.
 
-AI-assisted implementation covered Python data processing, SQL queries, React and TypeScript frontend components, and dashboard integration.
+The project establishes the analytical framework for these investigations. Specific business recommendations should be based on the corresponding filtered results and validated observations.
 
-### 4.3 Debugging and problem solving
+# 11. AI Tools and Human Contribution
 
-AI tools assisted with investigating SQL column-name mismatches, TypeScript errors, JSON serialization, visualization behavior, and dashboard integration issues.
+AI tools were used as supporting resources during development. They did not replace the analytical decisions, manual dashboard development or validation performed by the project author.
 
-### 4.4 Business intelligence
+### AI-assisted activities
 
-AI guidance supported DAX measures, KPI visualization, monthly trends, product and issue analysis, and interactive report filtering.
+| Area | AI contribution |
+|---|---|
+| Requirements | Documentation and planning assistance |
+| Python | Code-generation and debugging assistance |
+| SQL | Query-development assistance |
+| React | Frontend implementation assistance |
+| Power BI | DAX explanations and troubleshooting guidance |
+| Documentation | Technical writing and project documentation |
+| Deployment | GitHub and Vercel configuration guidance |
 
-### 4.5 Documentation and deployment
+### My contributions
 
-AI assistance supported technical documentation, GitHub preparation, and Vercel configuration notes.
+| Area | My contribution |
+|---|---|
+| Project definition | Defined the project objective and analytical scope |
+| Data understanding | Reviewed the dataset and analytical requirements |
+| Data preparation | Reviewed cleaning logic and validated processed outputs |
+| SQL analytics | Reviewed query requirements and analytical results |
+| KPI development | Defined and validated the required business metrics |
+| Power BI | Personally created DAX measures, KPI cards, charts and slicers |
+| Dashboard testing | Tested visualisations and interactive filters |
+| Project management | Made implementation and deployment decisions |
 
-## 5. Human-AI collaboration
+**The Power BI KPI measures and dashboard were personally implemented by me.** AI assistance provided explanations and troubleshooting support, rather than independently creating the report.
 
-The project used AI as a development assistant with human review and direction.
+# 12. Technical Skills Demonstrated
 
-**Human responsibilities**
+This project demonstrates practical application of the following data analytics skills.
 
-1. Defining the project idea and objectives.
-2. Selecting and providing the dataset.
-3. Reviewing requirements.
-4. Validating analytical results.
-5. Making dashboard design decisions.
-6. Manually implementing the Power BI report.
-7. Making testing and deployment decisions.
+| Skill area | Technologies / concepts |
+|---|---|
+| Data Cleaning | Python, Pandas |
+| Data Quality | Duplicate detection, validation, consistency checks |
+| Data Analysis | Exploratory analysis and KPI calculation |
+| SQL | Aggregations, filtering, grouping and analytical queries |
+| Business Intelligence | Microsoft Power BI |
+| DAX | Measures and KPI calculations |
+| Data Visualisation | Power BI, Recharts |
+| Dashboard Development | Interactive filters, KPI cards and charts |
+| Data Validation | Python-SQL result comparison |
+| Documentation | Analytical and technical documentation |
+| Deployment | GitHub and Vercel preparation |
 
-**AI-assisted responsibilities**
+# 13. Future Improvements
 
-1. Requirements documentation.
-2. Code-generation assistance.
-3. Data-processing and SQL implementation assistance.
-4. React implementation assistance.
-5. Debugging guidance.
-6. DAX and Power BI guidance.
-7. Documentation preparation.
+Potential enhancements include:
 
-## 6. Challenges and lessons learned
+- More detailed company benchmarking.
+- Advanced complaint trend analysis.
+- Predictive analysis of complaint volumes.
+- Natural Language Processing for complaint descriptions.
+- Automated dataset refresh.
+- More detailed executive reporting.
+- Secure Power BI embedding within the React application.
 
-**Challenges**
+These are proposed future improvements, not currently completed features.
 
-- Identifying duplicate records and inconsistent KPI references.
-- Keeping Python and SQL calculations consistent.
-- Resolving TypeScript build issues.
-- Handling date hierarchies and slicers in Power BI.
-- Understanding the distinction between a Power BI Desktop report and a web-embedded report.
-- Preparing a frontend-only Vercel deployment.
+# 14. Conclusion
 
-**Lessons learned**
+The Financial Customer Complaint Analytics Platform demonstrates an end-to-end approach to financial complaint data analysis.
 
-1. Validate data before creating visualizations.
-2. Maintain a single authoritative KPI baseline.
-3. Use modular code for maintainability.
-4. Verify generated code through execution.
-5. Keep business logic consistent across analytical platforms.
-6. Treat AI as an assistant and retain human oversight.
+The project covers the major stages of an analytical workflow, from raw dataset inspection and cleaning to SQL querying, KPI development, interactive dashboard creation and result validation.
 
-## 7. Future enhancement opportunities
+A key part of the implementation was the independent development of the Microsoft Power BI dashboard, including DAX measures, KPI cards, analytical visualisations and interactive slicers.
 
-Potential future work includes secure Power BI embedding, automated dataset refresh, complaint trend analysis, natural language processing, automated report generation, additional visualizations, and backend data integration. These are possibilities, not claims about current functionality.
-
-## 8. Conclusion
-
-The Financial Customer Complaint Analytics Platform combines Python data processing, SQL analytics, a React dashboard, and a manually authored Microsoft Power BI report. AI tools assisted with implementation and documentation, while human contributions included requirements, review and validation, project decisions, and hands-on Power BI Desktop work.
+Through this project, I applied Python, SQL and Power BI to a practical financial-services dataset and developed an understanding of how structured data analysis can support business monitoring and decision-making.
 
 ---
 
-**Document version:** 2.0
-**Last updated:** November 2026
-**Primary AI development tool:** Kiro AI (Claude Sonnet 4.5)
-**Additional AI assistance:** ChatGPT
-**Project:** Financial Customer Complaint Analytics Platform
+**Document Version:** 3.0  
+**Project:** Financial Customer Complaint Analytics Platform  
+**Primary Analytical Tools:** Python, SQL and Microsoft Power BI  
+**Frontend:** React and TypeScript  
+**Development Approach:** Human-led analytical implementation with AI-assisted technical support
