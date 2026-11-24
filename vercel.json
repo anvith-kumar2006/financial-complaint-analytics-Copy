@@ -1,10 +1,11 @@
+
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd react-dashboard && npm install && npm run build",
-  "outputDirectory": "react-dashboard/dist",
-  "framework": null,
-  "installCommand": "cd react-dashboard && npm install",
-  "devCommand": "cd react-dashboard && npm run dev",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
